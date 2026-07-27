@@ -4,6 +4,8 @@ Linux enablement on MacBook8,1 (aka MacBook Retina, 12-inch, Early 2015)
 
 ## Documentation & Reports
 
+- [Technical Report: Broadcom BCM4350 (`brcmfmac`) D3cold Suspend/Resume Analysis & eBPF Empirical Evidence](brcmfmac-suspend-d3cold-analysis-report.md)
+  - Empirical eBPF validation of `PCI_D3cold` (`state 4`), ACPI `ARPT` GPE wakeup sources, cold-resume teardown elimination, and upstream kernel patch architecture.
 - [Technical Report: Apple NVMe Controller (`106b:2001`) D3cold Suspend/Resume Failures & PCI Quirk Resolution](nvme-suspend-d3cold-analysis-report.md)
   - Comprehensive architectural analysis of S3 `deep` vs `D3cold` power states, NVMe controller reset timeouts on resume, empirical proof via `d3cold_allowed = 0`, and proposed PCI fixup quirk in `drivers/pci/quirks.c`.
 - [Technical Report: Apple SMC (`applesmc`) HWMON API Modernization & Concurrency Refactoring](applesmc-hwmon-conversion-report.md)
